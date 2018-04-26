@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <button>飞起400</button>
+  <button>800</button>
+  <div class="box"></div>
+
+  <script>
+    var btn = document.querySelectorAll('button')[0];
+    var btn2 = document.querySelectorAll('button')[1];
+    var box = document.querySelector('.box');
+    var timerId;
+    var left = 0;
+    btn.onclick = function () {
+      animate(box, 400)
+    }
+    btn2.onclick = function () {
+      animate(box, 800)
+    }
+    function animate(element, target) {
+      clearInterval(element.timerId);
+      element.timerId = setInterval(function () {
+        var current = element.offsetLeft;
+
+        var step = target - current > 0 ? 10 : -10;
+        if (Math.abs(target - current) > Math.abs(step)) {
+          current += step;          
+          element.style.left = current + 'px';
+        } else {
+          clearInterval(element.timerId);
+          element.style.left = target + 'px';
+        }
+      }, 17)
+    }
+  </script>
+</body>
+
+</html>

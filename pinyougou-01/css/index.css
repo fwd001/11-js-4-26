@@ -1,0 +1,364 @@
+img {
+  vertical-align: middle;
+}
+/* 大图区域开始 */
+section {
+  height: 465px;
+  /* background-color: #eee; */
+}
+.col1 {
+  height: 465px;
+  width: 209px;
+  background-color: #c81623;
+}
+.col2 {
+  height: 455px;
+  width: 720px;
+  margin: 10px 0 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 轮播图 */
+.col2 ul {
+  /* width: 800%; */
+  height: 455px;
+  position: absolute;
+}
+
+.col2 ul li {
+  float: left;;
+}
+.col2 ol {
+  padding: 4px;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+}
+.col2 ol li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  margin: 0 7px;
+  cursor: pointer;
+}
+.col2 ol li.current {
+  background-color: #c81623;
+}
+
+/* 小箭头 */
+.arrow {
+  display: none;
+}
+.col2:hover .arrow {
+  display: block;
+}
+.arr-l, 
+.arr-r {
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, .3);
+  line-height: 70px;
+  text-align: center;
+  /* font-family: '宋体'; */
+  color: white;
+  font-size: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.arr-r {
+  right: 0;
+}
+.arr-l:hover,
+.arr-r:hover {
+  background-color: rgba(0, 0, 0, .7);
+  color: white;
+}
+.col3 {
+  height: 455px;
+  width: 250px;
+  margin: 10px 0 0 10px;
+  background-color: #fff;
+  
+}
+.col3 .news {
+  width: 250px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.col3 .news .news-t {
+  line-height: 32px;
+  border-bottom: 1px dashed #ccc ;
+  padding: 0 16px;
+}
+
+.col3 .news .news-t .iconfont {
+  position: relative;
+  top: 1px;
+}
+.col3 .news .news-t h5 {
+  float: left;
+}
+.col3 .news .news-b  {
+  padding: 0 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  
+}
+
+.col3 .news .news-b a {
+  line-height: 25px;
+  font-size: 12px;
+}
+/* 服务 */
+.col3 .expand li {
+ float: left;
+ width: 62px;
+ height: 70px;
+ border-right: 1px solid #ccc;
+ border-bottom: 1px solid #ccc;
+ box-sizing: border-box;
+ text-align: center;
+ position: relative;
+}
+.col3 .expand li span {
+  width: 21px;
+  height: 26px;
+  background: url(../images/icons.png) no-repeat -18px -15px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.col3 .expand li a {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.col3 .expand li:nth-child(1),
+.col3 .expand li:nth-child(5),
+.col3 .expand li:nth-child(9) {
+  border-left: 1px solid #ccc;
+  box-sizing: content-box;
+  height: 69px;
+}
+.col3 .ad {
+  margin-top: 4px;
+}
+/* 大图区域结束 */
+/* 推荐区域 */
+.recommend {
+  margin-top: 11px;
+}
+.recommend ul {
+  background-color: #ebebeb;
+  position: relative;
+}
+.recommend ul li {
+  float: left;
+
+}
+.recommend ul .rd1 {
+  width: 206px;
+  height: 163px;
+  background: #5c5251 url(../images/图层106.png) no-repeat center 30px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.recommend ul .rd1 p {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.recommend ul .rd2,
+.recommend ul .rd3,
+.recommend ul .rd4,
+.recommend ul .rd5 {
+  width: 247px;
+  height: 163px;
+  background: url(../images/图层148.png) no-repeat 108px center;
+  text-align: center;
+  position: relative;
+}
+.recommend ul .rd3 {
+  background-image: url(../images/图层149.png);
+}.recommend ul .rd4 {
+  background-image: url(../images/图层150.png);
+}.recommend ul .rd5 {
+  background-image: url(../images/图层151.png);
+}
+.recommend ul li.line {
+  width: 1px;
+  height: 143px;
+  background-color: #dddddd;
+  margin-top: 10px;
+}
+.recommend ul li .t1 {
+    font-size: 16px;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+}
+.recommend ul li .t2 {
+  font-size: 14px;
+  color: #fff;
+  background-color: #00a0e8;
+  padding: 1px 2px;
+  position: absolute;
+  top: 50px;
+  left: 22px;
+}.recommend ul li .t3 {
+  font-size: 14px;
+  position: absolute;
+  top: 73px;
+  left: 22px;
+}.recommend ul li .t4 {
+  font-size: 12px;
+  padding: 1px 2px;
+  color: #fff;
+  background-color: #5fb200;
+  border-radius: 5px;
+  position: absolute;
+  top: 106px;
+  left: 22px;
+}
+/* 商品区域 */
+.like {
+  padding-top: 10px;
+}
+.like .likeTiele {
+  line-height: 45px;
+}
+.like .likeTiele h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.like ul li {
+  float: left;
+  width: 200px;
+  height: 231px;
+  text-align: center;
+}
+
+/* 家用电器 */
+.dianqi {
+  /* height: 400px; */
+  margin-top: 10px;
+}
+.dianqi .dq-t {
+  line-height: 38px;
+  border-bottom: 2px solid #c81623;
+}
+.dianqi .dq-t h3 {
+  font-size: 18px;
+  color: #c81623;
+  font-weight: 400;
+}
+.dianqi .dq-t div span {
+  padding: 0 5px;
+} 
+
+.dianqi .dq-b .dq210 {
+  width: 210px;
+  height: 360px;
+  background-color: #f9f9f9;
+  float: left;
+}
+.dianqi .dq-b .dq210 ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.dianqi .dq-b .dq210 ul li a {
+  line-height: 32px;
+  width: 86px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
+}
+.dianqi .dq-b .dq210 .sanxing {
+  text-align: center;
+  line-height: 263px;
+}
+.dianqi .dq-b .dq320 {
+  width: 330px;
+  height: 360px;
+  float: left;  
+  text-align: center;
+  background-color: #aed6d8;
+}.dianqi .dq-b .dq220-1 {
+  width: 220px;
+  height: 360px;
+  float: left;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+}.dianqi .dq-b .dq220-2 {
+  position: relative;
+  width: 220px;
+  height: 360px;
+  float: left;
+  text-align: center;
+  background-color: #fff;
+}.dianqi .dq-b .dq220-3 {
+  position: relative;
+  width: 220px;
+  height: 360px;
+  float: left;
+  text-align: center;
+  background-color: #fff;
+}
+.dianqi .dq-b .dq220-1:after,
+.dianqi .dq-b .dq220-2:after,
+.dianqi .dq-b .dq220-3:after{
+  content: "";
+  width: 1px;
+  height: 360px;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  right: -0px;
+}
+.dianqi .dq-b .dq220-1,
+.dianqi .dq-b .dq220-2,
+.dianqi .dq-b .dq220-3 {
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* 品牌logo */
+.ad-logo {
+  /* height: 66px; */
+  background-color: #f7f7f7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ad-logo li {
+  float: left;
+  text-align: center;
+  line-height: 66px;
+  width: 10%;
+  position: relative;
+}
+.ad-logo li:after {
+  content: "";
+  width: 1px;
+  height: 40px;
+  border-left: 1px dashed #ccc;
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+.ad-logo li:last-child:after {
+  border: 0;
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>详情页</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="fonts/iconfont.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+  <!-- 头部开始开始 -->
+  <header class="top-bar">
+      <!-- 直通车 -->
+      <div class="short-top">
+        <div class="container">
+          <div class="fl st-l">
+            品优购欢迎您！
+            <a class="ml-5 mr-5" href="#">请登录</a>
+            <a class="m-color" href="#">免费注册</a>
+          </div>
+          <div class="fr st-r">
+            <ul>
+                <li><a href="#">我的订单</a></li>
+                <li class="line"></li>
+                <li><a href="#">我的品优购<i class="iconfont icon-xiajiantou"></i></a></li> 
+                <li class="line"></li>
+                <li><a href="#">我的订单</a></li>
+                <li class="line"></li>
+                <li><a href="#">品优购会员<i class="iconfont icon-xiajiantou"></i></a></li>
+                <li class="line"></li>
+                <li><a href="#">企业采购</a></li>
+                <li class="line"></li>
+                <li><a href="#">关注品优购</a></li>
+                <li class="line"></li>
+                <li><a href="#">客户服务</a></li>
+                <li class="line"></li>
+                <li><a href="#">网站导航<i class="iconfont icon-xiajiantou"></i></a></li> 
+              </ul>
+          </div>
+        </div>
+      </div>
+      <!-- logo搜索 -->
+      <div class="site-header container">
+        <!-- logo -->
+        <h1 class="logo">品优购
+          <img src="images/logo_56.png" alt="">
+        </h1>
+        <!-- 搜索 -->
+        <form class="search">
+          <input type="text" placeholder="洗衣机 电脑 GTX1080">
+          <button><i class="iconfont icon-fangdajing"></i></button>
+        </form>
+        <!-- 购物车 -->
+        <a class="shop-car" href="#">
+          <i class="iconfont icon-gouwuchekong"></i>
+          我的购物车
+          <i class="iconfont icon-youjiantou"></i>
+          <span>0</span>
+          <div class="xiangxi">
+            <div class="w-line"></div>
+            空空如也~
+          </div>
+          
+        </a>
+        <!-- 关键词 -->
+        <div class="hotsearch">
+          <ul>
+            <li><a class="m-color" href="#">优惠收发</a></li>
+            <li><a href="#">办公用品</a></li>
+            <li><a href="#">1元优购</a></li>
+            <li><a href="#">优惠收发</a></li>
+            <li><a href="#">优惠收发</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">电脑</a></li>
+          </ul>
+        </div>
+        <ul class="classify-nav clearfix">
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">美妆馆</a></li>
+            <li><a href="#">船只超市</a></li>
+            <li><a href="#">全球购 <span class="cn-t">龙抬头</span></a></li>
+            <li><a href="#">闪购</a></li>
+            <li><a href="#">团购</a></li>
+            <li><a href="#">有趣 </a></li>
+            <li><a href="#">有趣 </a></li>
+        </ul>
+        <div class="all-goods">
+          全部商品分类
+          <ul>
+            <li><a href="#">家电<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">电脑、办公<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>
+            <li><a href="#">手机、数码、通讯<i class="iconfont icon-youjiantou"></i></a></li>        
+            </ul>
+        </div>
+      </div>
+  </header>
+      <!-- 头部结束 -->
+  <!-- 详情开始 -->
+  <div class="xiangqin container">
+    <!-- 面包屑标题 -->
+    <div class="crumbs-nav">
+      <div class="cn-t">
+        <a href="#">手机、数码、通讯</a> <i class="iconfont icon-youjiantou"></i>
+        <a href="#">手机</a>  <i class="iconfont icon-youjiantou"></i>
+        <a href="#">Apple苹果</a>  <i class="iconfont icon-youjiantou"></i>
+        <a href="#">iphone 6S Plus系类</a> 
+      </div>
+    </div>
+    <!-- 下面详细图片 -->
+    <div class="xq-b clearfix">
+      <div class="xqb-l fl">
+        <div class="xqb-l-t">
+          <img src="images/chanping.png" alt="">
+        </div>
+        <div class="xqb-l-b">
+            <div class="arrow-l">&lt;</div>
+            <div class="arrow-r">&gt;</div>
+            <div class="chanpin">
+              <ul>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                  <li><img src="images/suolvtu.png" alt=""></li>
+                </ul>
+            </div>
+            
+        </div>
+      </div>
+      <div class="xqb-r fr">
+        <div class="xq-title">
+          <p>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机</p>
+          <p>推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</p>
+        </div>
+        <div class="xq-price">
+          <p class="p1">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格 &nbsp;<span>&yen;5200.99</span> <span>降价通知</span></p>
+          <p class="p2">
+            促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销 &nbsp;
+            <span class="desc"> 
+            <span class="jiajia">加价购</span> 满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换
+                购热销商品  详情 》</span>
+          </p>
+        </div>
+        <div class="zhichi">
+          <p>
+            支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持 &nbsp;
+            <span>以旧换新，闲置手机回收  4G套餐超值抢  礼品购</span>
+          </p>
+        </div>
+        <div class="peisong">
+          <p>
+            配&nbsp;送&nbsp;至&nbsp;
+            <span>北京海淀区中关     有货    支持  99元免运费 |货到付款 |211限时达   　　　　　　<i class="iconfont icon-xiajiantou"></i><br><i>由自营发货，并提供售后服务。11:00前完成下单，预计今天（08月10日）送达</i> </span>
+           
+          </p>
+        </div>
+        <div class="s-color">
+          选择颜色&nbsp;
+          <button >金 色</button>
+          <button>银 色</button>
+          <button>黑 色</button>
+          <button class="current">玫 瑰 金</button>
+        </div>
+        <div class="s-banben">
+            选择版本&nbsp;
+            <button >公开版</button>
+            <button class="current">移动通信电信4G手机</button>
+        </div>
+        <div class="s-rongliang">
+          选择容量&nbsp;
+          <button >16 G</button>
+          <button class="current">128 G</button>
+        </div>
+        <div class="s-fangshi">
+          购买方式&nbsp;
+          <button >官方标配</button>
+          <button class="current">电信优惠套餐</button>
+        </div>
+        <div class="s-taocan">
+          套　　餐&nbsp;
+          <button >保护套餐</button>
+          <button class="current">充电套装</button>
+        </div>
+        <div class="goumai clearfix">
+          <div class="fl numb">
+            <input class="gm-num fl" type="text" value="1">
+            <div class="fl">
+              <div class="zj">+</div>
+              <div class="zj">-</div>
+            </div>
+          </div>
+          <button class="fr">立即购买</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 详情结束 -->
+  <!-- 介绍开始 -->
+  <div class="present container clearfix">
+    <div class="pl fl">
+      <div class="brand">
+        <div class="bd-t">
+          <button class="line">相关分类</button>
+          <button>推荐品牌</button>
+          <div class="current"></div>
+        </div>
+        <div class="bd-b">
+          <ul class="clearfix">
+            <li>手机</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+            <li>手机壳</li>
+          </ul>
+          <div class="cpzhanshi">
+              <img src="upload/mobile.png" alt="">
+              <p>iphone666</p>
+              <p>&yen;6999.99</p>
+              <button>加入购物框</button>
+          </div>
+          <div class="cpzhanshi">
+              <img src="upload/mobile.png" alt="">
+              <p>iphone666</p>
+              <p>&yen;6999.99</p>
+              <button>加入购物框</button>
+          </div>
+          <div class="cpzhanshi">
+              <img src="upload/mobile.png" alt="">
+              <p>iphone666</p>
+              <p>&yen;6999.99</p>
+              <button>加入购物框</button>
+          </div>
+          <div class="cpzhanshi">
+              <img src="upload/mobile.png" alt="">
+              <p>iphone666</p>
+              <p>&yen;6999.99</p>
+              <button>加入购物框</button>
+          </div>
+          <div class="cpzhanshi">
+              <img src="upload/mobile.png" alt="">
+              <p>iphone666</p>
+              <p>&yen;6999.99</p>
+              <button>加入购物框</button>
+          </div>
+          <div class="cpzhanshi">
+              <img src="upload/mobile.png" alt="">
+              <p>iphone666</p>
+              <p>&yen;6999.99</p>
+              <button>加入购物框</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- 右侧详情页 -->
+    <div class="pr fr">
+      <div class="pr-t clearfix">
+        <button>商品介绍</button>
+        <button>规格与包装</button>
+        <button>售后保障</button>
+        <button>商品评价</button>
+        <div class="current"></div>
+      </div>
+
+      <p>分辨率：1920*1080(FHD)</p> 
+      <p>后置摄像头：1200万像素</p> 
+      <p>前置摄像头：500万像素</p> 
+      <p>核 数：其他</p> 
+      <p>频 率：以官网信息为准</p> 
+      <p>品牌： Apple</p> 
+      <p>商品名称：APPLEiPhone 6s Plus</p> 
+      <p>商品编号：1861098</p> 
+      <p>商品毛重：0.51kg</p> 
+      <p>商品产地：中国大陆</p> 
+      <p>热点：指纹识别，Apple Pay，金属机身，拍照神器</p> 
+      <p>系统：苹果（IOS）</p> 
+      <p>像素：1000-1600万</p> 
+      <p>机身内存：64GB</p> 
+      <img src="upload/intro01.png" alt="" width="980">
+      <img src="upload/intro01.png" alt="" width="980">
+      <img src="upload/intro01.png" alt="" width="980">
+      <img src="upload/intro01.png" alt="" width="980">
+      <img src="upload/intro01.png" alt="" width="980">
+    </div>
+  </div>
+  <!-- 介绍结束 -->
+  <!-- 网站底部开始 -->
+  <footer>
+    <div class="footer-t container">
+      <ul class="clearfix">
+          <li>
+            <span></span>
+            <div class="desc">
+              <h3>正品保障</h3>
+              <p>正品保障 提供发票</p>
+            </div> 
+          </li>
+          <li>
+            <span></span>
+            <div class="desc">
+              <h3>正品保障</h3>
+              <p>正品保障 提供发票</p>
+            </div> 
+          </li>
+          <li>
+            <span></span>
+            <div class="desc">
+              <h3>正品保障</h3>
+              <p>正品保障 提供发票</p>
+            </div> 
+          </li>
+          <li>
+            <span></span>
+            <div class="desc">
+              <h3>正品保障</h3>
+              <p>正品保障 提供发票</p>
+            </div> 
+          </li>
+          <li>
+            <span></span>
+            <div class="desc">
+              <h3>正品保障</h3>
+              <p>正品保障 提供发票</p>
+            </div> 
+          </li>
+      </ul>
+    </div>
+    <div class="footer-c container clearfix">
+      <!-- 服务 -->
+      <div class="fl serve">
+        <dl>
+          <dt>购物指南</dt>
+          <dd>购物流程</dd>
+          <dd>会员介绍</dd>
+          <dd>生活旅行/团购</dd>
+          <dd>常见问题</dd>
+          <dd>大家电</dd>
+          <dd>联系客服</dd>
+        </dl>
+        <dl>
+          <dt>购物指南</dt>
+          <dd>购物流程</dd>
+          <dd>会员介绍</dd>
+          <dd>生活旅行/团购</dd>
+          <dd>常见问题</dd>
+          <dd>大家电</dd>
+          <dd>联系客服</dd>
+        </dl>
+        <dl>
+          <dt>购物指南</dt>
+          <dd>购物流程</dd>
+          <dd>会员介绍</dd>
+          <dd>生活旅行/团购</dd>
+          <dd>常见问题</dd>
+          <dd>大家电</dd>
+          <dd>联系客服</dd>
+        </dl>
+        <dl>
+          <dt>购物指南</dt>
+          <dd>购物流程</dd>
+          <dd>会员介绍</dd>
+          <dd>生活旅行/团购</dd>
+          <dd>常见问题</dd>
+          <dd>大家电</dd>
+          <dd>联系客服</dd>
+        </dl>
+        <dl>
+          <dt>购物指南</dt>
+          <dd>购物流程</dd>
+          <dd>会员介绍</dd>
+          <dd>生活旅行/团购</dd>
+          <dd>常见问题</dd>
+          <dd>大家电</dd>
+          <dd>联系客服</dd>
+        </dl>
+      </div>
+      <div class="fr help">
+        <h3>帮助中心</h3>
+        <img src="images/erweima_03.png" alt="">
+        <p>优品客户端</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">联系我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">关于我们</a>
+        <span>|</span> 
+        <a href="#">京东公益</a>
+        <span>|</span> 
+        <a href="#">English Site</a>
+        <span>|</span> 
+        <a href="#">Media & IR</a>              
+      </p>
+      <p>
+        地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn
+      </p>
+      <p>京ICP备08001421号京公网安备110108007702</p>
+    </div>
+  </footer>
+    <!-- 网站底部结束 -->
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .box {
+      width: 790px;
+      height: 340px;
+      margin: 110px auto;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    .box ul {
+      height: 340px;
+      width: 620%;
+      position: absolute;
+    }
+
+    .box ul li {
+      float: left;
+    }
+
+    .box:hover .arrow {
+      display: block;
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    .arr-r,
+    .arr-l {
+      height: 70px;
+      width: 30px;
+      background-color: rgba(0, 0, 0, 0.317);
+      color: white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      line-height: 70px;
+      font-size: 26px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .arr-r {
+      right: 0;
+    }
+
+    .arr-r:hover,
+    .arr-l:hover {
+      background-color: rgba(0, 0, 0, 0.605);
+    }
+
+    .box ol {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      padding: 4px;
+      border-radius: 999px;
+    }
+
+    .box ol li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 7px;
+      cursor: pointer;
+    }
+
+    .box ol li.current {
+      background-color: rgb(255, 70, 70);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul>
+      <li>
+        <a href="javascript:">
+          <img src="images/1.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:">
+          <img src="images/2.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:">
+          <img src="images/3.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:">
+          <img src="images/4.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:">
+          <img src="images/5.jpg" alt="">
+        </a>
+      </li>
+    </ul>
+    <div class="arrow">
+      <div class="arr-l">&lt;</div>
+      <div class="arr-r">&gt;</div>
+    </div>
+  </div>
+
+  <script src="03-animate.js"></script>
+  <script>
+    var box = document.querySelector('.box');
+    var lis = document.querySelectorAll('.box ul li');
+    var ul = document.querySelector('.box ul');
+    var ol = document.createElement('ol');
+    var arr_r = document.querySelector('.arr-r')
+    var arr_l = document.querySelector('.arr-l')
+    box.appendChild(ol);
+    console.log(box.offsetWidth);
+    
+    // 生成小圆点
+    var current = 0;
+    var index = 0;
+    var count = ul.childElementCount;
+    for (var i = 0; i < lis.length; i++) {
+      var li = document.createElement('li');
+      li.index = i;
+      ol.appendChild(li);
+      li.onclick = clickPointer;
+    }
+    ol.children[current].className = 'current';
+    // 小圆点点击事件
+    function clickPointer() {
+      ol.children[current].className = '';
+      ol.children[this.index].className = 'current';
+      var target = -this.index * box.offsetWidth;
+      if (index == count) {
+        ul.style.left = 0;
+      } else {
+        animate(ul, target, 40);
+      }
+      current = this.index;
+      index = current;
+    }
+    // 右按钮注册时间
+    arr_r.onclick = function () {
+      if (index == count) {
+        index = 0;
+        ul.style.left = 0;
+      }
+      index++;
+      if (index < count) {
+        ol.children[index].click();
+      } else {
+        animate(ul, -index * box.offsetWidth, 40);
+        ol.children[current].className = '';
+        ol.children[0].className = 'current';
+        current = 0;
+      }
+    }
+
+    // 左按钮注册时间
+    arr_l.onclick = function () {
+      if (index == 0) {
+        index = count;
+        ul.style.left = -index * box.offsetWidth + 'px';
+      }
+      index--;
+      ol.children[index].click();
+    }
+    var li = document.querySelector('.box ul>li').cloneNode(true);
+    ul.appendChild(li);
+
+
+  </script>
+</body>
+
+</html>
